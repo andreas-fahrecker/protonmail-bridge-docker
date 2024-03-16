@@ -3,7 +3,7 @@ FROM debian:buster
 WORKDIR /opt/protonmail
 
 # Copy bash scripts
-COPY gpgparams install.sh entrypoint.sh VERSION /protonmail/
+COPY gpgparams install.sh entrypoint.sh VERSION /opt/protonmail/
 
 # Install dependencies and protonmail bridge
 RUN bash install.sh
