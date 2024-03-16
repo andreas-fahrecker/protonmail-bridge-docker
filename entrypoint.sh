@@ -26,7 +26,7 @@ if [[ $1 == init ]]; then
     # done
 
     # Initialize pass
-    gpg --generate-key --batch /protonmail/gpgparams
+    gpg --generate-key --batch /opt/protonmail/gpgparams
     pass init pass-key
 
     # Login
